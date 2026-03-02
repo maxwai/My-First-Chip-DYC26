@@ -4,6 +4,9 @@
 [submodule "librelane"]
 	path = librelane
 	url = https://github.com/librelane/librelane.git
+[submodule "chips/07-layr2/design_data"]
+	path = chips/07-layr2/design_data
+	url = https://gitlab.lrz.de/layr26/challenge.git
 [submodule "chips/02-pacman/repos/pacman_sim"]
 	path = chips/02-pacman/repos/pacman_sim
 	url = https://gitlab.lrz.de/design-your-chip-2026/dyc_pacman
