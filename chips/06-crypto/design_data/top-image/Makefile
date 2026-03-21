@@ -34,8 +34,8 @@ klayout_initials:
 
 .PHONY: insert_img
 insert_img:
-	python scripts/insert_img.py $(CHIP_GDS) $(GDS_PATH) $(CHIP_GDS_WITH_LOGO) 708 713 $(CELLNAME)
-	python scripts/insert_img.py $(CHIP_GDS_WITH_LOGO) $(GDS_PATH_2) $(CHIP_GDS_WITH_LOGO_AND_INITIALS) 1300 400 $(CELLNAME_2)
+	python scripts/insert_img.py $(CHIP_GDS) $(GDS_PATH) $(CHIP_GDS_WITH_LOGO) 858 863 $(CELLNAME)
+	python scripts/insert_img.py $(CHIP_GDS_WITH_LOGO) $(GDS_PATH_2) $(CHIP_GDS_WITH_LOGO_AND_INITIALS) 1500 400 $(CELLNAME_2)
 
 .PHONY: klayout-final
 klayout-final:
