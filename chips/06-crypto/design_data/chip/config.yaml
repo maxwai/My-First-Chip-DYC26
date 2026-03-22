@@ -2,6 +2,8 @@ meta:
   version: 3
   flow: Chip
   substituting_steps:
+    KLayout.Filler: Magic.Filler
+
     # Magic reports some overlaps which can be ignored
     Checker.IllegalOverlap: null
     # Not working correctly
@@ -71,6 +73,9 @@ PDN_CORE_RING_VSPACING: 5
 PDN_CORE_RING_HSPACING: 5
 
 PRIMARY_GDSII_STREAMOUT_TOOL: klayout
+
+MAGIC_FILLER_SCRIPT: dir::scripts/generate_fill.py  # path to the python script
+MAGIC_FILLER_OPTIONS: ["-keep"]
 
 PAD_BONDPAD_NAME: bondpad_70x70_5L
 EXTRA_GDS: dir::bondpad_5l/gds/bondpad_70x70_5L.gds
